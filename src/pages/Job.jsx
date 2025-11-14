@@ -1,8 +1,11 @@
 import React from 'react'
+import JobList from '../components/JobList'
 
 function Job() {
   return (
-    <div>Job</div>
+    <div>
+      <JobList/>
+    </div>
   )
 }
 
