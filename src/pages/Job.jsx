@@ -3,7 +3,7 @@ import JobList from '../components/JobList'
 
 function Job() {
   return (
-    <div>
+    <div className='p-3'>
       <JobList/>
     </div>
   )

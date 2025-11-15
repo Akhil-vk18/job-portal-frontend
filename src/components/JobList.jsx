@@ -17,7 +17,7 @@ function JobList() {
   }, []);
 
   return (
-    <div className="">
+    <div className="grid grid-cols-4 gap-4">
       {jobs.map((job) => (
         <JobCard key={job.id} job={job} />
         
