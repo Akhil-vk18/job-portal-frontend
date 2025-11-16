@@ -14,14 +14,14 @@ export async function getAllJobs() {
 }
 
 export async function getByTitle(title) {
-    try {
-        const response = await axios.get(`${BASE_URL}/search`,{params :{title}});
-        console.log(response.data);
-        return response;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
+  try {
+    const response = await axios.get(`${BASE_URL}/search`, {
+      params: { title },
+    });
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
 }
-
-getAllJobs();
