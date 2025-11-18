@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api/jobs";
+const BASE_URL = import.meta.env.VITE_BASE_URL; //IMPORTING ENV VARIABLE
 
 export async function getAllJobs() {
   try {
@@ -25,3 +25,4 @@ export async function getByTitle(title) {
     throw error;
   }
 }
+getAllJobs();
